@@ -1,5 +1,5 @@
 import fs from 'fs'
-import post from '../post'
+import post from './post'
 import path from 'path'
 
 

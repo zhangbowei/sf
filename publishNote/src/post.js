@@ -1,6 +1,7 @@
 import request from 'superagent'
 import cheerio from 'cheerio'
 import fs from 'fs'
+import conf from './conf'
 
 let article = ''
 , tags = []
@@ -40,12 +41,11 @@ const base_headers = {
 , origin = 'http://segmentfault.com'
 , urls = {
   origin,
-  login: `${origin}/api/user/login`,
+  login: `${origin}/user/login`,
   write: `${origin}/write?freshman=1`,
   draft: `${origin}/api/article/draft/save`,
   tag: `${origin}/api/tags/search`,
-  blog: `${origin}/api/articles/add` }
-, conf = require('./conf.json')
+  blog: `${origin}/api/articles/add` } 
 
 let cookie
 
@@ -82,7 +82,6 @@ function login(res) {
   let token = getToken(res.text)
 
   cookie = res.headers['set-cookie'].join(',').match(/(PHPSESSID=.+?);/)[1]
-
   return new Promise((fulfill, reject) => {
     request
       .post(urls.login)
