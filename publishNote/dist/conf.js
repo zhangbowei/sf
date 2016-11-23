@@ -1,7 +1,7 @@
 "use strict";
 
 var info = {
-  "mail": process.env.SF_USER,
+  "username": process.env.SF_USER,
   "password": process.env.SF_PASSWORD,
   "remember": 1
 };

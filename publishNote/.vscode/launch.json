@@ -10,6 +10,7 @@
             "request": "launch",
             "program": "${workspaceRoot}/dist/index.js",
             "cwd": "${workspaceRoot}",
+            "sourceMaps": true, 
             "args": [
                 "../../link.md",
                 "testest",
@@ -18,10 +19,14 @@
             ]
         },
         {
-            "name": "Attach to Process",
+            "name": "Attach",
             "type": "node",
             "request": "attach",
-            "port": 9229
+            // TCP/IP address. Default is "localhost".
+            "address": "localhost",
+            // Port to attach to.
+            "port": 5858,
+            "sourceMaps": true
         }
     ]
 }

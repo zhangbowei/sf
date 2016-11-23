@@ -33,15 +33,15 @@ const base_headers = {
     Connection:'keep-alive',
     DNT:1,
     Host:'segmentfault.com',
-    Origin: 'http://segmentfault.com',
+    Origin: 'https://segmentfault.com',
     Pragma:'no-cache',
-    Referer: 'http://segmentfault.com/',
+    Referer: 'https://segmentfault.com/',
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
     'X-Requested-With': 'XMLHttpRequest'}
-, origin = 'http://segmentfault.com'
+, origin = 'https://segmentfault.com'
 , urls = {
   origin,
-  login: `${origin}/user/login`,
+  login: `${origin}/api/user/login`,
   write: `${origin}/write?freshman=1`,
   draft: `${origin}/api/article/draft/save`,
   tag: `${origin}/api/tags/search`,
@@ -51,7 +51,7 @@ let cookie
 
 function getToken(s) {
   let $ = cheerio.load(s)
-  , text = $('body script').eq(2).text()
+  , text = $('body>script').eq(1).text()
   , fn = new Function('window', text + ';return window.SF.token')
   , token = fn({})
 

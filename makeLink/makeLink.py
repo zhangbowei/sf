@@ -99,7 +99,7 @@ class BDTB:
             self.file.write(item)
 
     def start(self):
-        self.setFileTitle('link')
+        self.setFileTitle('../link')
         i = 1
         while(True):
             print "正在写入第" + str(i) + "页数据"
