@@ -10,6 +10,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel-node src/index.js ../../link.md 笔记索引 jquery",
+    "debug": "devtool dist/index.js  ../../link.md 笔记索引 javascript jquery --break",
     "babel": "gulp babel",
     "watch": "gulp watch"
   },
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "babel-core": "^6.18.2",
+    "devtool": "^2.3.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-changed": "^1.3.2",
