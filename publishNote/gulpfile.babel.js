@@ -6,9 +6,9 @@ import sourcemaps from 'gulp-sourcemaps';
 gulp.task('babel',() => {
     gulp.src('src/**/*.js')
         //.pipe(changed('dist'))
-        .pipe(sourcemaps.init({loadMaps: true}))
+        // .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(babel())
-        .pipe(sourcemaps.write('../map'))
+        // .pipe(sourcemaps.write('../map'))
         .pipe(gulp.dest('dist'));
 });
 
