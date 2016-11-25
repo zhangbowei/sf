@@ -8,11 +8,13 @@
             "name": "Launch Program",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/dist/index.js",
+            "program": "${workspaceRoot}/src/index.js",
             "cwd": "${workspaceRoot}",
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/dist",
             "args": [
                 "../../link.md",
-                "testest",
+                "笔记索引",
                 "jquery",
                 "javascript"
             ]

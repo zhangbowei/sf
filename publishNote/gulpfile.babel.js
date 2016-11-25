@@ -5,9 +5,14 @@ import sourcemaps from 'gulp-sourcemaps';
 
 gulp.task('babel',() => {
     gulp.src('src/**/*.js')
-        .pipe(sourcemaps.init({loadMaps: true}))
+        .pipe(sourcemaps.init())
         .pipe(babel())
-        .pipe(sourcemaps.write('../map'))
+        .pipe(sourcemaps.write('../maps', {
+            mapSources: function(sourcePath) {
+            // source paths are prefixed with '../src/'
+            return '../src/' + sourcePath;
+            }
+        }))
         .pipe(gulp.dest('dist'));
 });
 
