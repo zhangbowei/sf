@@ -111,7 +111,6 @@ class BDTB:
             i = i + 1
         print "写入任务完成"
 
-print u"请输入帖子代号"
 # baseURL = 'https://segmentfault.com/u/' + str(raw_input('请输入账户名：'))
 baseURL = 'https://segmentfault.com/u/' + 'zhangbowei'
 bdtb = BDTB(baseURL)
