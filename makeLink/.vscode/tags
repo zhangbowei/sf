@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BDTB	../makeLink.py	/^class BDTB:$/;"	kind:class	line:38
+Tool	../makeLink.py	/^class Tool:$/;"	kind:class	line:8
+__init__	../makeLink.py	/^    def __init__(self, baseUrl):$/;"	kind:member	line:41
+baseURL	../makeLink.py	/^baseURL = 'https:\/\/segmentfault.com\/u\/' + 'zhangbowei'$/;"	kind:variable	line:115
+bdtb	../makeLink.py	/^bdtb = BDTB(baseURL)$/;"	kind:variable	line:116
+getContent	../makeLink.py	/^    def getContent(self, page):$/;"	kind:member	line:77
+getPage	../makeLink.py	/^    def getPage(self, pageNum):$/;"	kind:member	line:52
+isPageExist	../makeLink.py	/^    def isPageExist(self, page):$/;"	kind:member	line:66
+makeLink.py	../makeLink.py	1;"	kind:file	line:1
+re	../makeLink.py	/^import re$/;"	kind:namespace	line:3
+removeAddr	../makeLink.py	/^    removeAddr = re.compile('<a.*?>|<\/a>')$/;"	kind:variable	line:12
+removeExtraTag	../makeLink.py	/^    removeExtraTag = re.compile('<.*?>')$/;"	kind:variable	line:22
+removeImg	../makeLink.py	/^    removeImg = re.compile('<img.*?>| {7}|')$/;"	kind:variable	line:10
+replace	../makeLink.py	/^    def replace(self, x):$/;"	kind:member	line:24
+replaceBR	../makeLink.py	/^    replaceBR = re.compile('<br><br>|<br>')$/;"	kind:variable	line:20
+replaceLine	../makeLink.py	/^    replaceLine = re.compile('<tr>|<div>|<\/div>|<\/p>')$/;"	kind:variable	line:14
+replacePara	../makeLink.py	/^    replacePara = re.compile('<p.*?>')$/;"	kind:variable	line:18
+replaceTD	../makeLink.py	/^    replaceTD = re.compile('<td>')$/;"	kind:variable	line:16
+setFileTitle	../makeLink.py	/^    def setFileTitle(self, title):$/;"	kind:member	line:90
+start	../makeLink.py	/^    def start(self):$/;"	kind:member	line:101
+urllib2	../makeLink.py	/^import urllib2$/;"	kind:namespace	line:2
+writeData	../makeLink.py	/^    def writeData(self, contents):$/;"	kind:member	line:93
